@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Challenges</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="vending-machine">
+            <p class="total">Total: $0</p>
+            <button class="lime-cola">LIME COLA $2.00</button>
+            <button class="salted-peanuts">SALTED PEANUTS $3.00</button>
+            <button class="chocolate-bar">CHOCOLATE BAR $4.00</button>
+            <button class="fruit-gummies">FRUIT GUMMIES $6.00</button>
+        </section>
+        <section class="make-money">
+            <form class="addCoin">
+                <div>
+                    <label for="amount">How many?</label>
+                    <input type="number" id="amount" placeholder="e.g. 2" required/>
+                </div>
+                <div>
+                    <label for="coinType">Which coin?</label>
+                    <select id="coinType" name="coinType" placeholder="e.g. Dime" required>
+                        <option value="Penny">Penny</option>
+                        <option value="Knickel">Knickel</option>
+                        <option value="Dime">Dime</option>
+                        <option value="Quarter">Quarter</option>
+                    </select>
+                </div>
+                <button class="make-money">Make Money!</button>
+                <p class="amountParagraph"></p>
+            </form>
+            <ul class="coins">
+            </ul>
+        </section>
+        <section class="light bulb">
+            <div class="bulbStyle">Light Bulb</div>
+            <button class="on">On</button>
+            <button class="off">Off</button>
+            <button class="toggle">Toggle</button>
+            <button class="end">End</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
