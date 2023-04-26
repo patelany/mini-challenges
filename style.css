@@ -1,3 +1,9 @@
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
 .coins {
     list-style: none;
     display: flex;
@@ -5,13 +11,39 @@
 } 
 
 .coin {
-    height: 50px;
-    width: 50px;
-    color: white;
+    height: 75px;
+    width: 75px;
+    color: black;
     padding: 20px;
     margin: 10px;
     display: none;
     border-radius: 50%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.penny {
+    width: 30px;
+    height: 30px;
+    background-color: chocolate;
+}
+
+.dime {
+    width: 20px;
+    height: 20px;
+    background-color: silver;
+}
+
+.nickel {
+    width: 50px;
+    height: 50px;
+    background-color: silver;
+}
+
+.quarter {
+    background-color: silver; 
 }
 
 .bulbStyle {
@@ -22,4 +54,9 @@
     align-items: center;
     border-radius: 10px;
     padding-left: 5px;
+}
+
+.light-on {
+    background-color: yellow;
+    color: orange;
 }

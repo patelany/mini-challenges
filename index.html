@@ -10,39 +10,39 @@
 <body>
     <main>
         <section class="vending-machine">
-            <p class="total">Total: $0</p>
+            <p class="total">Total: $0.00</p>
             <button class="lime-cola">LIME COLA $2.00</button>
             <button class="salted-peanuts">SALTED PEANUTS $3.00</button>
             <button class="chocolate-bar">CHOCOLATE BAR $4.00</button>
             <button class="fruit-gummies">FRUIT GUMMIES $6.00</button>
         </section>
         <section class="make-money">
+            <p class="coin-total">Total: $0.00</p>
             <form class="addCoin">
                 <div>
                     <label for="amount">How many?</label>
-                    <input type="number" id="amount" placeholder="e.g. 2" required/>
+                    <input type="number" id="amount" value="0" min="0" max="10" required/>
                 </div>
                 <div>
                     <label for="coinType">Which coin?</label>
                     <select id="coinType" name="coinType" placeholder="e.g. Dime" required>
-                        <option value="Penny">Penny</option>
-                        <option value="Knickel">Knickel</option>
-                        <option value="Dime">Dime</option>
-                        <option value="Quarter">Quarter</option>
+                        <option class="penny" value="penny" data-value=".01">Penny</option>
+                        <option class="nickel" value="nickel" data-value=".05">Nickel</option>
+                        <option class="dime" value="dime" data-value=".10">Dime</option>
+                        <option class="quarter" value="quarter" data-value=".25">Quarter</option>
                     </select>
                 </div>
                 <button class="make-money">Make Money!</button>
-                <p class="amountParagraph"></p>
             </form>
             <ul class="coins">
             </ul>
         </section>
         <section class="light bulb">
             <div class="bulbStyle">Light Bulb</div>
-            <button class="on">On</button>
-            <button class="off">Off</button>
-            <button class="toggle">Toggle</button>
-            <button class="end">End</button>
+            <button class="light-btn on">On</button>
+            <button class="light-btn off">Off</button>
+            <button class="light-btn toggle">Toggle</button>
+            <button class="light-btn end">End</button>
         </section>
     </main>
     <script src="script.js"></script>
